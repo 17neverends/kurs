@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общая информация</title>
+    <link rel="stylesheet" href="/frontend/common/style.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div class="logo">
+            <img src="/frontend/common/static/logo.png" alt="Логотип">
+            <h1>Ренессанс</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a id="accountLink">Аккаунт</a></li>
+                <li><a id="aboutLink">О нас</a></li>
+                <li><a id="serviceLink">Услуги</a></li>
+                <li><a id="personalLink">Персонал</a></li>
+                <li><a id="contactLink">Наши контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div id="startview">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="/frontend/common/static/startviewimage1.png">
+                    </div>
+                    <div class="slide">
+                        <img src="/frontend/common/static/startviewimage2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="/frontend/common/static/startviewimage3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info" id="about">
+            <div class="infoTitle" id="infoTitle1">
+                <h2>Познакомимся ближе</h2>
+                <p class="desc">Наша миссия - обеспечить высококачественное медицинское обслуживание и поддержку пациентов в их стремлении к здоровому и активному образу жизни.</p>
+                <p class="desc">Год основания: 2024</p>
+            </div>
+            <div id="aboutInfo">
+                <h3>Общая информация</h3>
+
+                <p>Клиника здоровья "Ренессанс" - ваш надежный партнер в заботе о вашем здоровье.
+                   Мы предлагаем современные медицинские услуги и тщательный индивидуальный подход к каждому пациенту.
+                   Наш высококвалифицированный медицинский персонал и современное оборудование позволяют нам обеспечивать высокий уровень медицинского обслуживания.
+                   В клинике "Ренессанс" мы стремимся к достижению оптимальных результатов и обеспечению вашего благополучия и комфорта на каждом этапе лечения.</p>
+                <h3>Наши достижения</h3>
+                <ul>
+                    <li>Увеличение числа пациентов, получающих качественное и своевременное лечение</li>
+                    <li>Первый пункт</li>
+                    <li>Развитие программ профилактики заболеваний и ранней диагностики</li>
+                    <li>Совершенствование системы медицинской документации и информационной поддержки для повышения эффективности работы больницы</li>
+                    <li>Обучение и развитие медицинского персонала для повышения квалификации и качества медицинской помощи</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="info" id="service">
+            <div class="infoTitle">
+                <h2>Услуги</h2>
+                <p class="desc">Клиника здоровья "Ренессанс" предлагает широкий спектр современных процедур и диагностических услуг, включая диагностику, анализы и исследования. Наш высококвалифицированный медицинский персонал обеспечивает индивидуальный подход к каждому пациенту, гарантируя высокий уровень качества заботы и лечения.</p>
+            </div>
+            <div class="service-items">
+                <div class="item" id="item1">
+                    <h3>Диагностика</h3>
+                    <p>Комплексная диагностика в нашей клинике построена по принципу «Всё включено»:
+                        прием врача, исследования и рекомендации.</p>
+                    <button type="button" class="openService" id="openService1"><span>Подробнее</span></button>
+
+                </div>
+                <div class="item" id="item2">   
+                    <h3>Анализы</h3>
+                    <p>Комплексная диагностика в нашей клинике построена по принципу «Всё включено»:
+                        прием врача, исследования и рекомендации.</p>
+                    <button type="button" class="openService" id="openService1"><span>Подробнее</span></button>
+
+                </div>
+                <div class="item" id="item3">
+                    <h3>Исследования</h3>
+                    <p>Комплексная диагностика в нашей клинике построена по принципу «Всё включено»:
+                        прием врача, исследования и рекомендации.</p>
+                    <button type="button" class="openService" id="openService1"><span>Подробнее</span></button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="info" id="personal">
+            <div class="infoTitle">
+                <h2>Персонал</h2>
+                <p class="desc">В нашей клинике собран коллектив специалистов, каждый из которых имеет высокую квалификацию и профессионально зарекомендовал себя как среди коллег, так и среди пациентов.</p>
+            </div>
+            <div id="sliderWithButtons">
+                <button class="sliderButton" id="prevBtn">←</button>
+
+                <div class="personalSlider"></div>
+                <button class="sliderButton" id="nextBtn">→</button>
+            </div>
+        
+
+
+        </div>
+        <div class="info" id="contact">
+            <h2>Наши контакты</h2>
+            <div id="contactInfo">
+                <img id="contactImg" src="/frontend/common/static/contactlogo.png">
+                <div id="contactText">
+                    <p>г. Ростов-на-Дону</p>
+                    <p class="phone-number"><a  href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a></p>
+                    <div id="contactButtons">
+                        <div class="circleButton" id="WAbutton">
+                            <img class="Imglogo" id="WAlogo" src="/frontend/common/static/WA.jpg">
+                        </div>
+                        <div class="circleButton" id="VKbutton">
+                            <img class="Imglogo" id="VKlogo" src="/frontend/common/static/vk.jpg">
+                        </div>
+                        <div class="circleButton" id="TGbutton">
+                            <img class="Imglogo" id="TGlogo" src="/frontend/common/static/tg.png">
+                        </div>
+                    </div>    
+                    <div id="schuedle">
+                        <p>Режим работы:</p>
+                        <p>Понедельник - воскресенье</p>
+                        <p>c 07:00 до 21:00</p>
+                    </div>
+                    <div class="circleButton" id="QRbutton">
+                        <img class="Imglogo" id="QRlogo" src="/frontend/common/static/QRlogo.png">
+                    </div>
+                </div>
+            </div>
+            <div id="hiddenQRs">
+                    <div class="QRs">
+                        <img class="qr" src="/frontend/common/static/qrWA.png">
+                        <img class="qr" src="/frontend/common/static/qrVK.png">
+                        <img class="qr" src="/frontend/common/static/qrTG.png">
+                    </div>
+                <button type="button" class="openService" id="closeButton">Закрыть</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Информация</p>
+        </div>
+      </div>
+    
+
+    <script src="/frontend/common/startSlider.js"></script>
+    <script src="/frontend/common/startpageactivity.js"></script>
+    <script src="/frontend/common/personalSlider.js"></script>
+    <script src="/frontend/common/navbar.js"></script>
+
+</body>
+</html>

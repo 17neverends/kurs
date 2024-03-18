@@ -1,0 +1,47 @@
+{
+    "doc1": {
+        "docName": "Иванов Иван Иванович 1",
+        "docDesc": "Врач высшей категории",
+        "docImg": "/frontend/common/static/doc1.png"
+    }, 
+    "doc2": {
+        "docName": "Марков Марк Маркович 1",
+        "docDesc": "Терапевт",
+        "docImg": "/frontend/common/static/doc2.png"
+    },
+    "doc3": {
+        "docName": "Семенов Семен Семенович 1",
+        "docDesc": "Сотрудник лабортатории",
+        "docImg": "/frontend/common/static/doc3.png"
+    },
+    "doc4": {
+        "docName": "Иванов Иван Иванович 2",
+        "docDesc": "Врач высшей категории",
+        "docImg": "/frontend/common/static/doc2.png"
+    }, 
+    "doc5": {
+        "docName": "Марков Марк Маркович 2",
+        "docDesc": "Терапевт",
+        "docImg": "/frontend/common/static/doc1.png"
+    },
+    "doc6": {
+        "docName": "Семенов Семен Семенович 2",
+        "docDesc": "Сотрудник лабортатории",
+        "docImg": "/frontend/common/static/doc3.png"
+    },
+    "doc7": {
+        "docName": "Иванов Иван Иванович 3",
+        "docDesc": "Врач высшей категории",
+        "docImg": "/frontend/common/static/doc3.png"
+    }, 
+    "doc8": {
+        "docName": "Марков Марк Маркович 3",
+        "docDesc": "Терапевт",
+        "docImg": "/frontend/common/static/doc2.png"
+    },
+    "doc9": {
+        "docName": "Семенов Семен Семенович 3",
+        "docDesc": "Сотрудник лабортатории",
+        "docImg": "/frontend/common/static/doc1.png"
+    }
+}
