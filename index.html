@@ -15,14 +15,26 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a id="accountLink">Аккаунт</a></li>
-                <li><a id="aboutLink">О нас</a></li>
-                <li><a id="serviceLink">Услуги</a></li>
-                <li><a id="personalLink">Персонал</a></li>
-                <li><a id="contactLink">Наши контакты</a></li>
+                <li><a class="accountLink">Аккаунт</a></li>
+                <li><a class="aboutLink">О нас</a></li>
+                <li><a class="serviceLink">Услуги</a></li>
+                <li><a class="personalLink">Персонал</a></li>
+                <li><a class="contactLink">Наши контакты</a></li>
             </ul>
         </nav>
+        <button type="button" id="openBurger">=</button>
     </header>
+
+    <div id="burgerMenu">
+        <button type="button" id="closeBurger">X</button>
+        <div class="burgerLinks">
+            <li><a class="accountLink">Аккаунт</a></li>
+            <li><a class="aboutLink">О нас</a></li>
+            <li><a class="serviceLink">Услуги</a></li>
+            <li><a class="personalLink">Персонал</a></li>
+            <li><a class="contactLink">Наши контакты</a></li>
+        </div>
+    </div>
 
     <div class="main">
         <div id="startview">
@@ -114,8 +126,8 @@
             <div id="contactInfo">
                 <img id="contactImg" src="/frontend/common/static/contactlogo.png">
                 <div id="contactText">
-                    <p>г. Ростов-на-Дону</p>
-                    <p class="phone-number"><a  href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a></p>
+                    <p class="links"> <a href="https://yandex.ru/maps/org/donskoy_gosudarstvenny_tekhnicheskiy_universitet/100522677108/?ll=39.711788%2C47.237229&z=16.77" target="_blank">г. Ростов-на-Дону</a></p>
+                    <p class="links"><a  href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a></p>
                     <div id="contactButtons">
                         <div class="circleButton" id="WAbutton">
                             <img class="Imglogo" id="WAlogo" src="/frontend/common/static/WA.jpg">
@@ -146,6 +158,28 @@
                 <button type="button" class="openService" id="closeButton">Закрыть</button>
             </div>
 
+        </div>
+    </div>
+
+    <h2 id="titleForm">Свяжитесь с нами</h2>
+
+    <div id="contactForm">
+        <div id="rowFormInputs">
+            <div class="labelInput">
+                <label>Имя</label>
+                <input type="text" class="inputForm" id="fioInput">
+            </div>
+            <div class="labelInput">
+                <label>Почта</label>
+                <input type="text" class="inputForm" id="mailInput">
+            </div>
+        </div>    
+            <label>Текст обращения</label>
+        <textarea type="text" class="inputForm" id="appealText"></textarea>
+
+        <div id="buttonInput">
+            <p id="acceptRules">Нажимая на кнопку, вы даете Согласие на обработку персональных данных и соглашаетесь с Политикой в отношении обработки персональных данных.</p>
+            <button type="button" class="openService" id="sendFormButton">Отправить</button>
         </div>
     </div>
 

@@ -188,7 +188,6 @@ nav ul li a {
 
 .openService span {
     position: relative;
-    z-index: 1;
 }
 
 .item {
@@ -247,10 +246,11 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px;
     width: calc(33.33% - 20px); 
     box-sizing: border-box;
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .docName, .docDesc {
@@ -304,17 +304,14 @@ nav ul li a {
     background-color: #e0e0e0;
 }
 
-.phone-number {
-    font-size: 20px;
 
-}
 
-.phone-number a {
+.links a {
     color: #333; 
     text-decoration: none; 
 }
 
-.phone-number a:hover {
+.links a:hover {
     text-decoration: underline;
 }
 
@@ -325,6 +322,7 @@ nav ul li a {
     height: 60%;
     border-radius: 5px;
     display: block; 
+    margin-bottom: 20px;
 }
 
 #contactInfo {
@@ -408,6 +406,125 @@ nav ul li a {
     min-width: 76%;
 }
 
+#burgerMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.burgerLinks {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.burgerLinks li {
+    margin-bottom: 10px;
+}
+
+.burgerLinks li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#closeBurger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#openBurger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 20px 30px;
+}
+
+#titleForm {
+    text-align: center;
+}
+
+#rowFormInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#buttonInput {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputForm{
+    display: flex;
+    min-width: 50%;
+    padding: 10px;
+    border: 2px solid #676767; 
+    border-radius: 8px; 
+    outline: none;
+    font-size: 1.5vw;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#fioInput {
+    margin-right: 20px;
+}
+
+#sendFormButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-size: 17px; 
+}
+
+
+#acceptRules{
+    font-size: 15px;
+}
+
+
+#appealText {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    resize: none;
+    font-size: 1.5vw;
+    height: 20vh;
+}
+
 @media (max-width: 1000px) {
     .info h2 {
         font-size: 30px;
@@ -471,4 +588,59 @@ nav ul li a {
         max-width: 100%;
     }
 
+    .burgerLinks li a {
+        font-size: 40px;
+    }
+
+    #closeBurger {
+        font-size: 40px;
+    }
+
+    #openBurger {
+        display: flex;
+    }
+
+    #rowFormInputs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    #buttonInput {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .inputForm{
+        padding: 5px;
+        border: 2px solid #676767; 
+        border-radius: 8px; 
+        outline: none;
+        font-size: 7vw;
+    }
+    
+    .labelInput{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #fioInput {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    #acceptRules{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #appealText {
+        font-size: 7vw;
+        height: 20vh;
+    }
 }
+

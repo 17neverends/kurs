@@ -3,7 +3,7 @@ var btn = document.getElementById("openService1");
 var span = document.getElementsByClassName("close")[0];
 let qrButton = document.getElementById('QRlogo');
 let qrDiv = document.getElementById('hiddenQRs');
-
+let QRS = document.querySelectorAll('.qr');
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -25,8 +25,12 @@ qrButton.addEventListener('click', function() {
 
 document.getElementById('closeButton').addEventListener('click', function() {
   qrDiv.classList.toggle('show');
+  qrDiv.classList.toggle('fullshow');
   window.scrollTo(0, document.body.scrollHeight);
 });
+
+
+
 
 document.getElementById('WAbutton').addEventListener('click', function() {
   window.open('https://www.whatsapp.com', '_blank');
